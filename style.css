@@ -1,0 +1,1347 @@
+body {
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: 300;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+header {
+    background:
+        linear-gradient(rgba(117, 117, 117, 0.493), rgba(0, 0, 0, 0.87)),
+        url('sushi-con-aguacate-salmon-cangrejo-semillas-de-sesamo-y-salsa-de-soja.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+    height: 700px;
+}
+
+.frase {
+    font-size: 75px;
+    position: relative;
+    top: -650px;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 75px;
+    color: white;
+    text-align: center;
+}
+
+
+nav {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.568);
+    margin-bottom: 20px;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    flex-wrap: nowrap;
+
+
+}
+
+nav ul {
+    margin-left: 400px;
+    width: 9600px;
+    /* border: 1px solid red; */
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 20px
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: end;
+}
+
+nav ul li a:hover {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    color: black;
+}
+
+.wave {
+    margin-top: -300px;
+}
+
+/* a:visited{
+    color: #06b80f;
+} */
+
+a:active {
+    color: white;
+}
+
+/* desplegacion de nav */
+.foods {
+    padding: 0;
+    opacity: 0;
+    visibility: hidden;
+    width: 300px;
+    background-color: rgba(19, 18, 19, 255);
+    position: absolute;
+    border-radius: 20px;
+
+}
+
+.menu:hover .foods {
+    opacity: 1;
+    height: 600px;
+    visibility: visible;
+    z-index: 3;
+    border-radius: 20px;
+
+}
+
+/* .foods li{
+    width: 100%;
+height: 100%;
+} */
+.foods li {
+    padding: 10px;
+    width: 250px;
+}
+
+.foods li:hover {
+    background-color: rgb(110, 54, 54);
+    padding: 10px;
+    width: 250px;
+    border-radius: 20px;
+}
+
+.menu {
+    position: relative;
+    margin-right: 200px;
+}
+
+
+.img-logo {
+    width: 80px;
+    padding-top: 10px;
+    padding-left: 20px;
+    margin-left: 80px;
+    border-radius: 100px;
+}
+
+nav ul {
+    padding-top: 30px;
+    float: right;
+}
+
+/* .foods{
+    width: 200px;
+    background-color: rgba(19,18,19,255);
+    z-index: 1;
+} */
+
+.banner {
+    max-width: 100%;
+}
+
+.featured {
+    width: 100%;
+    display: flex;
+}
+
+iframe {
+    margin-top: 20px;
+    padding: 2em;
+    /* overflow-y: visible; */
+}
+
+
+article {
+    margin: 20px 0;
+
+}
+
+
+.ft-articulo {
+    width: 800px;
+    text-align: center;
+    margin: 100px auto;
+}
+
+.ft-articulo hr {
+    border: 2px solid rgb(61, 7, 7);
+    width: 50px;
+}
+
+.ft-articulo h1 {
+    font-size: 40px;
+}
+
+.ft-articulo p {
+    font-size: 20px;
+    line-height: 1.6;
+    /* Aumenta el espacio entre las líneas dentro del párrafo */
+    opacity: 0.7;
+}
+
+iframe,
+.ft-articulo {
+    display: inline-block;
+}
+
+.ft-articulo .foodRussian {
+    color: black;
+}
+
+.sushiArticle {
+    width: 400px;
+}
+
+.boton-container {
+    text-align: center;
+    background-color: black;
+    width: 200px;
+    margin: 30px auto;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.boton-container a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.boton {
+    padding: 15px;
+}
+
+
+.boton-container:hover {
+    background-color: rgb(121, 25, 25);
+    transform: scale(1.05);
+}
+
+.boton-container a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.art-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+}
+
+.art-image img {
+    max-width: 100%;
+    margin: 0;
+}
+
+.art-cont {
+    width: 740px;
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+    border-bottom: solid thin black;
+}
+
+/* footer */
+
+
+.padredivfooter {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.padreubicacioniconos {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.padredivfooter div h3 {
+    border-bottom: 1px solid white;
+    display: flex;
+}
+
+.padredivfooter div .ubicacioniconos {
+    padding: 12px;
+    width: 20px;
+    font-size: 20px;
+    border-radius: 12px;
+    border: 1px solid white;
+    margin-top: 10px;
+}
+
+.padredivfooter div a {
+    text-decoration: none;
+}
+
+.padredivfooter div a:hover {
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 12px;
+    color: black;
+}
+
+footer {
+    background:
+        linear-gradient(to left, rgb(105, 7, 7), rgb(0, 0, 0));
+    clear: both;
+    color: #fff;
+    line-height: 30px;
+    padding: 45px;
+    height: 250px;
+}
+
+footer a {
+    color: #fff;
+    margin-top: 10px;
+}
+
+.redes {
+    width: 30%;
+
+}
+
+.enlaces {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.redes a {
+    font-size: 25px;
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 10px;
+    margin-right: 10px;
+    position: relative;
+    top: 10px;
+}
+
+.padredivfooter div {
+    margin-left: 20px;
+}
+
+address {
+    background-color: black;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+/* slider */
+
+#slider {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#slider img {
+    width: 100%;
+
+}
+
+#slider article {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slider 20 infinite alternate ease-in-out;
+    position: relative;
+}
+
+#slider p {
+    width: 100%;
+    top: 200px;
+    font-size: 50px;
+    position: absolute;
+    left: 0;
+    color: #fff;
+}
+
+#slider h1 {
+    width: 100%;
+    top: 200px;
+    font-size: 50px;
+    position: absolute;
+    left: 0;
+    color: #fff;
+}
+
+#imagenUno {
+    background:
+        linear-gradient(rgba(105, 7, 7, 0.493), rgba(0, 0, 0, 0.425)),
+        url('meat-5868514_1280.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+}
+
+/* servicios */
+
+.servicios {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.servicios article {
+    border: 1px solid black;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 15px;
+}
+
+.servicios article h3 {
+    background-color: rgba(0, 0, 0, 0.637);
+    color: white;
+    margin-top: 0;
+    font-size: 20px;
+    padding: 13px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.servicios article p {
+    height: 48%;
+}
+
+/* sushi */
+#japon {
+    background:
+        linear-gradient(to left, rgba(0, 0, 0, 0), rgb(0, 0, 0)),
+        url('https://elviajerofeliz.com/wp-content/uploads/2015/04/Platos-tipicos-de-Japon-Sushi.jpg');
+    background-repeat: no-repeat;
+    color: rgb(235, 209, 185);
+    overflow: hidden;
+}
+
+
+#japon div {
+    /* opacity: 0;
+    visibility: hidden; */
+    /* position: relative; */
+    transform: translateY(300px);
+    transition: transform 0.5s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.637);
+    height: 350px;
+    cursor: pointer;
+    font-size: 20px;
+    position: relative;
+}
+
+#japon button {
+    border: 0;
+    width: 100%;
+    background-color: #cf4a0cef;
+    padding: 10px;
+    position: relative;
+    bottom: -10px;
+    font-size: 20px;
+    height: 50px;
+    transition: background-color 0.5s ease-in-out;
+    cursor: pointer;
+    transition: font-size 0.1s ease-in-out;
+}
+
+#japon button:hover {
+    font-size: 30px;
+}
+
+
+#japon button a {
+    text-decoration: none;
+    color: rgb(255, 253, 253);
+}
+
+
+#japon:hover div {
+    /* opacity: 1;
+    visibility: visible; */
+    height: 350px;
+    transform: translateY(-20px);
+}
+
+/* onirigi */
+
+#onirigi {
+    background:
+        linear-gradient(to left, rgba(0, 0, 0, 0), rgb(0, 0, 0)),
+        url('https://elviajerofeliz.com/wp-content/uploads/2015/04/Platos-tipicos-de-Japon-Onigiri.jpg');
+    background-repeat: no-repeat;
+    color: rgb(235, 209, 185);
+    overflow: hidden;
+}
+
+#onirigi div {
+    /* opacity: 0;
+    visibility: hidden; */
+    /* position: relative; */
+    transform: translateY(300px);
+    transition: transform 0.5s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.637);
+    height: 350px;
+    cursor: pointer;
+    font-size: 20px;
+    position: relative;
+}
+
+#onirigi button {
+    border: 0;
+    width: 100%;
+    background-color: #cf4a0cef;
+    padding: 10px;
+    position: relative;
+    bottom: -10px;
+    font-size: 20px;
+    height: 50px;
+    transition: background-color 0.5s ease-in-out;
+    cursor: pointer;
+    transition: font-size 0.1s ease-in-out;
+}
+
+#onirigi button:hover {
+    font-size: 30px;
+}
+
+
+#onirigi button a {
+    text-decoration: none;
+    color: rgb(255, 253, 253);
+}
+
+
+#onirigi:hover div {
+    /* opacity: 1;
+    visibility: visible; */
+    height: 350px;
+    transform: translateY(-20px);
+}
+
+/* sashinmi */
+
+#sashimi {
+    background:
+        linear-gradient(to left, rgba(0, 0, 0, 0), rgb(0, 0, 0)),
+        url('https://elviajerofeliz.com/wp-content/uploads/2015/04/Platos-tipicos-de-Japon-Sashimi-696x328.jpg');
+    background-repeat: no-repeat;
+    color: rgb(235, 209, 185);
+    overflow: hidden;
+}
+
+#sashimi div {
+    /* opacity: 0;
+    visibility: hidden; */
+    /* position: relative; */
+    transform: translateY(300px);
+    transition: transform 0.5s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.637);
+    height: 350px;
+    cursor: pointer;
+    font-size: 20px;
+    position: relative;
+}
+
+#sashimi button {
+    border: 0;
+    width: 100%;
+    background-color: #cf4a0cef;
+    padding: 10px;
+    position: relative;
+    bottom: -10px;
+    font-size: 20px;
+    height: 50px;
+    transition: background-color 0.5s ease-in-out;
+    cursor: pointer;
+    transition: font-size 0.1s ease-in-out;
+}
+
+#sashimi button:hover {
+    font-size: 30px;
+}
+
+
+#sashimi button a {
+    text-decoration: none;
+    color: rgb(255, 253, 253);
+}
+
+
+#sashimi:hover div {
+    /* opacity: 1;
+    visibility: visible; */
+    height: 350px;
+    transform: translateY(-20px);
+}
+
+/* sopas de miso  */
+
+#sopa {
+    background:
+        linear-gradient(to left, rgba(0, 0, 0, 0), rgb(0, 0, 0)),
+        url('https://elviajerofeliz.com/wp-content/uploads/2015/04/Platos-tipicos-de-Japon-Sopa-de-misho-696x328.jpg');
+    background-repeat: no-repeat;
+    color: rgb(235, 209, 185);
+    overflow: hidden;
+}
+
+#sopa div {
+    /* opacity: 0;
+    visibility: hidden; */
+    /* position: relative; */
+    transform: translateY(300px);
+    transition: transform 0.5s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.637);
+    height: 350px;
+    cursor: pointer;
+    font-size: 20px;
+    position: relative;
+}
+
+#sopa button {
+    border: 0;
+    width: 100%;
+    background-color: #cf4a0cef;
+    padding: 10px;
+    position: relative;
+    bottom: -10px;
+    font-size: 20px;
+    height: 50px;
+    transition: background-color 0.5s ease-in-out;
+    cursor: pointer;
+    transition: font-size 0.1s ease-in-out;
+}
+
+#sopa button:hover {
+    font-size: 30px;
+}
+
+
+#sopa button a {
+    text-decoration: none;
+    color: rgb(255, 253, 253);
+}
+
+
+#sopa:hover div {
+    /* opacity: 1;
+    visibility: visible; */
+    height: 350px;
+    transform: translateY(-20px);
+}
+
+/* udon */
+
+#udon {
+    background:
+        linear-gradient(to left, rgba(0, 0, 0, 0), rgb(0, 0, 0)),
+        url('https://elviajerofeliz.com/wp-content/uploads/2015/04/Platos-tipicos-de-Japon-Udon-696x328.jpg');
+    background-repeat: no-repeat;
+    color: rgb(235, 209, 185);
+    overflow: hidden;
+}
+
+#udon div {
+    /* opacity: 0;
+    visibility: hidden; */
+    /* position: relative; */
+    transform: translateY(300px);
+    transition: transform 0.5s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.637);
+    height: 350px;
+    cursor: pointer;
+    font-size: 20px;
+    position: relative;
+}
+
+#udon button {
+    border: 0;
+    width: 100%;
+    background-color: #cf4a0cef;
+    padding: 10px;
+    position: relative;
+    bottom: -10px;
+    font-size: 20px;
+    height: 50px;
+    transition: background-color 0.5s ease-in-out;
+    cursor: pointer;
+    transition: font-size 0.1s ease-in-out;
+}
+
+#udon button:hover {
+    font-size: 30px;
+}
+
+
+#udon button a {
+    text-decoration: none;
+    color: rgb(255, 253, 253);
+}
+
+
+#udon:hover div {
+    /* opacity: 1;
+    visibility: visible; */
+    height: 350px;
+    transform: translateY(-20px);
+}
+
+/* soba */
+
+#soba {
+    background:
+        linear-gradient(to left, rgba(0, 0, 0, 0), rgb(0, 0, 0)),
+        url('https://elviajerofeliz.com/wp-content/uploads/2015/04/Platos-tipicos-de-Japon-Soba-696x328.jpg');
+    background-repeat: no-repeat;
+    color: rgb(235, 209, 185);
+    overflow: hidden;
+}
+
+#soba div {
+    /* opacity: 0;
+    visibility: hidden; */
+    /* position: relative; */
+    transform: translateY(300px);
+    transition: transform 0.5s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.637);
+    height: 350px;
+    cursor: pointer;
+    font-size: 20px;
+    position: relative;
+}
+
+#soba button {
+    border: 0;
+    width: 100%;
+    background-color: #cf4a0cef;
+    padding: 10px;
+    position: relative;
+    bottom: -10px;
+    font-size: 20px;
+    height: 50px;
+    transition: background-color 0.5s ease-in-out;
+    cursor: pointer;
+    transition: font-size 0.1s ease-in-out;
+}
+
+#soba button:hover {
+    font-size: 30px;
+}
+
+
+#soba button a {
+    text-decoration: none;
+    color: rgb(255, 253, 253);
+}
+
+
+#soba:hover div {
+    /* opacity: 1;
+    visibility: visible; */
+    height: 350px;
+    transform: translateY(-20px);
+}
+
+/* ramen */
+
+
+#ramen {
+    background:
+        linear-gradient(to left, rgba(0, 0, 0, 0), rgb(0, 0, 0)),
+        url('https://elviajerofeliz.com/wp-content/uploads/2015/04/Platos-tipicos-de-Japon-Ramen-696x328.jpg');
+    background-repeat: no-repeat;
+    color: rgb(235, 209, 185);
+    overflow: hidden;
+}
+
+#ramen div {
+    /* opacity: 0;
+    visibility: hidden; */
+    /* position: relative; */
+    transform: translateY(300px);
+    transition: transform 0.5s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.637);
+    height: 350px;
+    cursor: pointer;
+    font-size: 20px;
+    position: relative;
+}
+
+#ramen button {
+    border: 0;
+    width: 100%;
+    background-color: #cf4a0cef;
+    padding: 10px;
+    position: relative;
+    bottom: -10px;
+    font-size: 20px;
+    height: 50px;
+    transition: background-color 0.5s ease-in-out;
+    cursor: pointer;
+    transition: font-size 0.1s ease-in-out;
+}
+
+#ramen button:hover {
+    font-size: 30px;
+}
+
+
+#ramen button a {
+    text-decoration: none;
+    color: rgb(255, 253, 253);
+}
+
+
+#ramen:hover div {
+    /* opacity: 1;
+    visibility: visible; */
+    height: 350px;
+    transform: translateY(-20px);
+}
+
+
+
+/* nosotros  */
+#misionVision {
+    width: 100%;
+    height: 450px;
+}
+
+#misionVision article {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#misionVision img {
+    width: 500px;
+    height: auto;
+    padding: 30px;
+    border-bottom-left-radius: 100%;
+    padding-right: 0;
+    margin-right: 0;
+    /* position: absolute;
+    margin-left: 812px;
+    margin-top: -500px; */
+}
+
+#misionVision p {
+    margin: 100px;
+    opacity: 0.6;
+    width: 700px;
+    font-size: 25px;
+}
+
+#misionVision h1 {
+    position: absolute;
+    margin-left: 300px;
+    font-size: 30px;
+    font-style: italic;
+}
+
+
+/* revisara codigo bien */
+/*
+.box {
+    width: 390px;
+    position: absolute;
+    margin-left: 640px;
+    margin-top: -300px;
+    transform: rotate(-90deg);
+  --size: 50px;
+  --m: 0.5;
+  --p: calc(var(--m)*var(--size));
+  --R: calc(var(--size)*sqrt(var(--m)*var(--m) + 1));
+
+  mask:
+    radial-gradient(var(--R) at 50% calc(100% - (var(--size) + var(--p))), #000 99%, #0000 101%)
+      calc(50% - 2 * var(--size)) 0/calc(4 * var(--size)) 100%,
+    radial-gradient(var(--R) at 50% calc(100% + var(--p)), #0000 99%, #000 101%)
+      50% calc(100% - var(--size)) / calc(4 * var(--size)) 100% repeat-x;
+  background: white;
+  height: 200px;
+} */
+
+/* form */
+.nostros {
+    padding: 30px;
+    margin: 10px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+}
+
+.rus {
+    height: 200px;
+    width: 300px;
+    margin-left: 40px;
+    margin-top: 250px;
+}
+
+
+
+/* contacto*/
+
+
+form {
+    width: 60%;
+    margin: auto;
+    border: 1px solid rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background:
+        linear-gradient(to left, rgba(0, 0, 0, 0), rgb(0, 0, 0)),
+        url(https://cdn.pixabay.com/photo/2020/01/31/07/26/chef-4807317_1280.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 100px;
+    background-color: rgb(4, 9, 22);
+
+}
+
+form .boton {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(0, 0, 0);
+    border-top: 1px solid white;
+    margin-top: 60px;
+}
+
+form .boton button {
+    width: 50%;
+    border: 0px solid white;
+    background-color: #cf4a0cef;
+    margin-right: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+form .boton button:hover {
+    background-color: #ff702eef;
+}
+
+
+form h1 {
+    width: 100%;
+    background: linear-gradient(to top, rgba(92, 3, 3, 0.747), rgb(0, 0, 0));
+    margin-top: 0;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+}
+
+form fieldset legend {
+    color: white;
+}
+
+form fieldset {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: auto;
+    margin-top: 50px;
+    color: white;
+}
+
+.usuario input {
+    border: 0px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    outline: none;
+    background-color: transparent;
+    color: white;
+}
+
+form select {
+    background-color: rgba(141, 141, 141, 0.89);
+    color: white;
+    border: 0px;
+    padding: 10px;
+    border-radius: 100px;
+}
+
+
+/* quiees somosm */
+
+.nostroos {
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 400px;
+    width: 100%;
+    margin-top: -400px;
+    color: white;
+    overflow: hidden;
+}
+
+.nostroos .vision {
+    background-size: 100%;
+    margin-top: 0;
+    font-size: 40px;
+    background-repeat: no-repeat;
+    background: linear-gradient(to left, rgba(155, 25, 25, 0.877), rgba(1, 1, 19, 0.616)), url(https://cdn.pixabay.com/photo/2020/06/01/22/23/eye-5248678_960_720.jpg);
+}
+
+.nostroos .vision p {
+    overflow: hidden;
+    transform: translatex(-800px);
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.nostroos .mision p {
+    overflow: hidden;
+    transform: translatex(800px);
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.nostroos .mision:hover p {
+    transform: translateY(0);
+}
+
+.nostroos .vision:hover p {
+    transform: translateY(0);
+}
+
+.nostroos .mision {
+    margin-top: 0;
+    font-size: 40px;
+    background-size: 100%;
+
+    background: linear-gradient(to left, rgba(1, 1, 19, 0.616), rgba(155, 25, 25, 0.897)), url(https://cdn.pixabay.com/photo/2020/05/24/23/44/hands-5216585_1280.jpg);
+}
+
+
+/* noistrosa miembreos de la cocian */
+
+.miembros {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 200px;
+    margin-top: 100px;
+
+}
+
+
+.chef {
+    width: 300px;
+    border: 1px solid rgb(0, 0, 0);
+    margin: auto;
+    height: 300px;
+    margin-bottom: 100px;
+    text-align: center;
+    background-color: rgb(224, 213, 213);
+    border-radius: 20px;
+}
+
+/* generafal chef */
+
+.chef h3 {
+    transform: translatey(140px);
+    transition: transform 0.5s ease-in-out;
+}
+
+.chef .foto:hover h3 {
+    transform: translateY(0);
+}
+
+
+.chef .foto {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+.chef h3 {
+    /* position: absolute;
+    top: 0; */
+    margin-top: 60px;
+    color: white;
+    text-align: center;
+
+}
+
+.chef .foto {
+    border: 1px solid rgb(0, 0, 0);
+    /* background: linear-gradient(to left, rgba(1, 1, 19, 0.616),rgba(155, 25, 25, 0.897)) , url(https://cdn.pixabay.com/photo/2020/05/24/23/44/hands-5216585_1280.jpg); */
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.301), rgba(0, 0, 0, 0.644)), url(https://tse3.mm.bing.net/th/id/OIP._AJotxoiUqTYWCqF68hgQwHaE8?rs=1&pid=ImgDetMain&o=7&rm=3);
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+    border-radius: 200%;
+    height: 200px;
+    margin-top: 10px;
+}
+
+
+/* limpieza */
+
+.chef .fotoLimpieza {
+    border: 1px solid rgb(0, 0, 0);
+    /* background: linear-gradient(to left, rgba(1, 1, 19, 0.616),rgba(155, 25, 25, 0.897)) , url(https://cdn.pixabay.com/photo/2020/05/24/23/44/hands-5216585_1280.jpg); */
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.301), rgba(0, 0, 0, 0.644)), url(https://cdn.pixabay.com/photo/2019/04/02/18/16/cleaning-4098410_960_720.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+    border-radius: 200%;
+    height: 200px;
+}
+
+/* recepcionuista */
+
+.chef .fotoRecepcionista {
+    border: 1px solid rgb(0, 0, 0);
+    /* background: linear-gradient(to left, rgba(1, 1, 19, 0.616),rgba(155, 25, 25, 0.897)) , url(https://cdn.pixabay.com/photo/2020/05/24/23/44/hands-5216585_1280.jpg); */
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.301), rgba(0, 0, 0, 0.644)), url(https://cdn.pixabay.com/photo/2012/02/29/11/59/agent-18762_960_720.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+    border-radius: 200%;
+    height: 200px;
+}
+
+/* bartender  */
+
+.chef .fotoBartender {
+    border: 1px solid rgb(0, 0, 0);
+    /* background: linear-gradient(to left, rgba(1, 1, 19, 0.616),rgba(155, 25, 25, 0.897)) , url(https://cdn.pixabay.com/photo/2020/05/24/23/44/hands-5216585_1280.jpg); */
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.301), rgba(0, 0, 0, 0.644)), url(https://cdn.pixabay.com/photo/2020/09/12/05/11/model-5564913_960_720.jpg);
+    background-size: cover;
+    background-position: top;
+    width: 200px;
+    border-radius: 200%;
+    height: 200px;
+}
+
+/* meceros */
+
+.chef .fotomecero {
+    border: 1px solid rgb(0, 0, 0);
+    /* background: linear-gradient(to left, rgba(1, 1, 19, 0.616),rgba(155, 25, 25, 0.897)) , url(https://cdn.pixabay.com/photo/2020/05/24/23/44/hands-5216585_1280.jpg); */
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.301), rgba(0, 0, 0, 0.644)), url(https://cdn.pixabay.com/photo/2023/08/23/06/14/woman-8207704_960_720.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+    border-radius: 200%;
+    height: 200px;
+}
+
+/* geretne */
+
+.chef .fotogerente {
+    border: 1px solid rgb(0, 0, 0);
+    /* background: linear-gradient(to left, rgba(1, 1, 19, 0.616),rgba(155, 25, 25, 0.897)) , url(https://cdn.pixabay.com/photo/2020/05/24/23/44/hands-5216585_1280.jpg); */
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.301), rgba(0, 0, 0, 0.644)), url(https://cdn.pixabay.com/photo/2022/01/07/19/06/executive-6922418_1280.jpg);
+    background-size: cover;
+    background-position: top;
+    width: 200px;
+    border-radius: 200%;
+    height: 200px;
+}
+
+
+/* parilla */
+
+.chef .fotoparilla {
+    border: 1px solid rgb(0, 0, 0);
+    /* background: linear-gradient(to left, rgba(1, 1, 19, 0.616),rgba(155, 25, 25, 0.897)) , url(https://cdn.pixabay.com/photo/2020/05/24/23/44/hands-5216585_1280.jpg); */
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.301), rgba(0, 0, 0, 0.644)), url(https://cdn.pixabay.com/photo/2017/05/30/11/28/chef-2356648_1280.jpg);
+    background-size: cover;
+    background-position: left left left left;
+    width: 200px;
+    border-radius: 200%;
+    height: 200px;
+}
+
+/* ayudante */
+
+.chef .fotoayudante {
+    border: 1px solid rgb(0, 0, 0);
+    /* background: linear-gradient(to left, rgba(1, 1, 19, 0.616),rgba(155, 25, 25, 0.897)) , url(https://cdn.pixabay.com/photo/2020/05/24/23/44/hands-5216585_1280.jpg); */
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.301), rgba(0, 0, 0, 0.644)), url(https://cdn.pixabay.com/photo/2013/02/13/22/43/kitchen-81493_1280.jpg);
+    background-size: cover;
+    background-position: top;
+    width: 200px;
+    border-radius: 200%;
+    height: 200px;
+}
+
+/* jefe segundo */
+.chef .fotochefdos {
+    border: 1px solid rgb(0, 0, 0);
+    /* background: linear-gradient(to left, rgba(1, 1, 19, 0.616),rgba(155, 25, 25, 0.897)) , url(https://cdn.pixabay.com/photo/2020/05/24/23/44/hands-5216585_1280.jpg); */
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.301), rgba(0, 0, 0, 0.644)), url(https://cdn.pixabay.com/photo/2018/09/25/08/40/chefs-3701718_1280.jpg);
+    background-size: cover;
+    background-position: top;
+    width: 200px;
+    border-radius: 200%;
+    height: 200px;
+}
+
+
+/* servicios */
+
+
+.ingredinets {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.separador {
+    border: 4px solid rgb(4, 17, 53);
+}
+
+.temaingredi {
+    margin-top: -300px;
+    text-align: center;
+}
+
+.ingredinets .ingredientescolumna {
+    background: linear-gradient(to left, rgba(86, 91, 97, 0), rgba(0, 132, 255, 0.342)), url(https://cdn.pixabay.com/photo/2022/02/11/05/53/new-year-7006583_1280.jpg);
+    padding: 10px;
+    width: 500px;
+    height: 380px;
+    font-size: 20px;
+    background-color: rgb(85, 84, 84);
+    margin: 10px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    justify-content: center;
+    color: white;
+
+}
+
+.h {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* .ingredientescolumna{
+    width: 400px;
+    border: 1px solid blue;
+     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+} */
+/* .ingredinets li ul{
+    display: flex;
+    flex-direction: column;
+} */
+
+
+/* responsive */
+@media (max-width: 600px) {
+    .menuu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        color: black;
+    }
+
+    .menu {
+        display: none;
+    }
+
+
+    .menuu li {
+        text-align: right;
+        margin-left: 100px;
+    }
+
+    nav {
+        height:300px;
+    }
+
+    .frase {
+        font-size: 10px;
+    }
+
+    header {
+        height: 300px;
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .wave{
+        display: none;
+    }
+
+
+    nav {
+        color: black;
+        text-align: right;
+        margin: auto;
+        width: 100%;
+        height: 300px;
+        position: relative;
+    }
+
+    .img-logo {
+        width: 70px;
+
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    #slider{
+        width: 100%;
+    }
+
+    #imagenUno{
+        width: 290px;
+        height: 200px;
+    }
+
+    footer{
+        height: 840px;
+    }
+
+    .padredivfooter{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .redes{
+        width: 300px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .padreubicacioniconos{
+        width: 300px;
+    }
+
+
+}

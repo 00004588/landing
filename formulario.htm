@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>registro de clientes</h1>
+    <!-- metodo post(se envia de manera oculta) y get(si se ven) -->
+    <form action="#" method="post">
+        <label for="name">Nombre: </label>
+        <input type="text" id="nombre" placeholder="name" name="nombre" required minlength="3" maxlength="7" autocomplete="on">
+        <br>
+        <br>
+        <label for="apellid">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" placeholder="surname" required minlength="3" maxlength="40" autocomplete="family-name">
+        <br>
+        <br>
+        <label for="email">email:</label>
+        <input type="email" id="email" name="email" placeholder="email" required minlength="3" maxlength="40" autocomplete="eamil">
+        <br>
+        <br>
+        <label for="password">password:</label>
+        <input type="password" id="password" name="password" placeholder="password" required minlength="3" maxlength="40" title="password incorrecta">
+        <br>
+        <br>
+        <fieldset>
+            <legend>Genero:</legend>
+            <input type="radio" value="masculino" name="genero">
+            Masculino
+            <input type="radio" value="femenino" name="genero">
+            Femenino
+            <input type="radio" value="femenino" name="genero">
+            Otro
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label for="fecha">Fecha De Nacimiento</label>
+            <input type="date" required name="fecha" >
+            <br>
+            <br>
+            <label for="dirrecion">Dirrecion</label>
+            <input type="text" required name="dirrecion" >
+            <br>
+            <br>
+            <label for="telefono">telefono</label>
+            <input type="number" required name="telefono" >
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <legend>regimen</legend>
+         <label for="regimen">regimen:</label>
+        <select name="regimen" id="regimen">
+            <option value="f">selecciona una opcion:</option>
+            <option value="regimenComun">regimen comun</option>
+            <option value="regimenSimplificado">regimen simplificado</option>
+            <option value="granContribuyente">gran contribuyente</option>
+        </select>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Intereses</legend>
+            <input type="checkbox" id="viajes" name="viajes" checked>
+            viajes
+            <input type="checkbox" id="tecnologia" name="tecnologia">
+            tecnologia
+            <input type="checkbox" id="deporte" name="deporte">
+            deporte
+        </fieldset>
+        <br>
+        <br>
+        <label for="comentario">comentaraio: </label>
+        <textarea name="comentario" id="comentario" minlength="20" maxlength="21ingrese el comentario no maximo 20 lineas y minimo 10"  rows="10" cols="40" >
+        </textarea>
+        <button type="submit">enviar</button>
+    <br>
+    <br>
+    <button type="reset">reset</button>
+    </form>
+    <!-- rowspan -colspan -->
+    <table cellpadding="8" cellpacing="0" border="1">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Regimen</th>
+                <th>telefono</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- tr table row -->
+             <!-- th table head -->
+             <!-- td table data -->
+            <tr>
+                <td>001</td>
+                <td>Ana Gomez</td>
+                <td>ana.gomez@example.com</td>
+                <td>24735835</td>
+                <td>simplificado</td>
+            </tr>
+            <tr>
+                <td>802</td>
+                <td>carlos perez</td>
+                <td>carlos.perez@gmail.com</td>
+                <td>13513</td>
+                <td>regimen comun</td>
+            </tr>
+        </tbody>
+
+    </table>
+    
+</body>
+</html>
